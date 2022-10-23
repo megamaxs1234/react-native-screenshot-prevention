@@ -7,7 +7,9 @@ buildscript {
         }
 
         dependencies {
-            classpath 'com.android.tools.build:gradle:3.5.3'
+           // classpath 'com.android.tools.build:gradle:3.5.3'
+                    classpath("com.android.tools.build:gradle:7.2.1")
+
         }
     }
 }
@@ -19,10 +21,10 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
-    compileSdkVersion safeExtGet('ScreenshotPrevention_compileSdkVersion', 29)
+    compileSdkVersion safeExtGet('ScreenshotPrevention_compileSdkVersion', 31)
     defaultConfig {
-        minSdkVersion safeExtGet('ScreenshotPrevention_minSdkVersion', 16)
-        targetSdkVersion safeExtGet('ScreenshotPrevention_targetSdkVersion', 29)
+        minSdkVersion safeExtGet('ScreenshotPrevention_minSdkVersion', 21)
+        targetSdkVersion safeExtGet('ScreenshotPrevention_targetSdkVersion', 31)
         versionCode 1
         versionName "1.0"
 
